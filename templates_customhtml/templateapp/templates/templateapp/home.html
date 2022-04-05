@@ -1,0 +1,34 @@
+
+{% extends 'templateapp/base.html' %}
+
+
+
+{% block content %}
+<center>
+
+    <h1> Calender app! </h1>
+    <h4> Hello {{ name }}! Events For {{ month }} {{ year }} </h4>
+    
+    {{ month }} </br>
+    {{ year }} </br>
+    
+    {{ month_number }}</br>
+    
+    
+    Time is: {{ time }}
+    
+    </br> </br>
+    
+    {{ cal|safe}}
+    
+    
+    
+    </br> </br> </br></br>
+    
+    Copyright (c) {{ current_year}}
+    
+    </center>
+
+{% endblock %}
+
+
