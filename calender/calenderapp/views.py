@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 
-def calender(request, year, month):
+def calender(request, year=datetime.now().year, month=datetime.now().strftime("%B")):
     name = "sohan"
     month = month.title()
 
@@ -39,7 +39,7 @@ def calender(request, year, month):
         "cal":cal,
         "current_year": current_year,
         "time":time,
-        
+
 
 
 

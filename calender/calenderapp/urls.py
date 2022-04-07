@@ -10,6 +10,6 @@ urlpatterns = [
     # UUID: universally unique identifier
 
 
-    # path('', views.calender, name="calender"),
+    path('', views.calender, name="calender"),
     path('<int:year>/<str:month>/', views.calender, name="calender")
 ]
